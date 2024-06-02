@@ -175,7 +175,7 @@ team_ranks_df = summary_df.query('name.str.contains("Rank")').dropna(axis=1)
 # #### Concatenate current season player totals with historical player archive
 
 player_totals_archive_df = pd.read_parquet(
-    "http://wilkensdata.s3-website-us-east-1.amazonaws.com//giants/data/batting/archive/giants_player_batting_statistics_1958_2023.parquet"
+    "http://giantsdata.s3-website-us-east-1.amazonaws.com//giants/data/batting/archive/giants_player_batting_statistics_1958_2023.parquet"
 )
 
 
@@ -187,7 +187,7 @@ players_full_df = (
 
 
 team_totals_archive_df = pd.read_parquet(
-    "http://wilkensdata.s3-website-us-east-1.amazonaws.com//giants/data/batting/archive/giants_team_batting_statistics_1958_2023.parquet"
+    "http://giantsdata.s3-website-us-east-1.amazonaws.com//giants/data/batting/archive/giants_team_batting_statistics_1958_2023.parquet"
 )
 
 
@@ -199,7 +199,7 @@ team_full_df = (
 
 
 team_ranks_archive_df = pd.read_parquet(
-    "http://wilkensdata.s3-website-us-east-1.amazonaws.com//giants/data/batting/archive/giants_team_batting_rankings_1958_2023.parquet"
+    "http://giantsdata.s3-website-us-east-1.amazonaws.com//giants/data/batting/archive/giants_team_batting_rankings_1958_2023.parquet"
 )
 
 
