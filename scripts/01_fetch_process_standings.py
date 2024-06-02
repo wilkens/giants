@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # LA Dodgers Standings, 1958-present
-# > This notebook downloads the team's current standings table from [Baseball Reference](https://www.baseball-reference.com/teams/LAD/2024-schedule-scores.shtml) and combines it with historic records for later analysis and visualization.
+# # SF Giants Standings, 1958-present
+# > This notebook downloads the team's current standings table from [Baseball Reference](https://www.baseball-reference.com/teams/SFG/2024-schedule-scores.shtml) and combines it with historic records for later analysis and visualization.
 
 # ---
 
@@ -12,7 +12,7 @@
 # coding: utf-8
 
 """
-LA Dodgers Standings, 1958-present
+SF Giants Standings, 1958-present
 This script downloads the team's current standings table from Baseball Reference and combines it with historic records.
 """
 
@@ -29,20 +29,20 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # Configuration
 year = 2024
-url = f"https://www.baseball-reference.com/teams/LAD/{year}-schedule-scores.shtml"
+url = f"https://www.baseball-reference.com/teams/SFG/{year}-schedule-scores.shtml"
 output_dir = "data/standings"
-csv_file = f"{output_dir}/dodgers_standings_1958_present.csv"
-csv_file_slim = f"{output_dir}/dodgers_standings_1958_present_optimized.csv"
-json_file = f"{output_dir}/dodgers_standings_1958_present.json"
-json_file_slim = f"{output_dir}/dodgers_standings_1958_present_optimized.json"
-historic_file = "https://stilesdata.com/dodgers/data/standings/archive/dodgers_standings_1958_2023.parquet"
-parquet_file = f"{output_dir}/dodgers_standings_1958_present.parquet"
-s3_bucket = "stilesdata.com"
-s3_key_csv = "dodgers/data/standings/dodgers_standings_1958_present.csv"
-s3_key_json = "dodgers/data/standings/dodgers_standings_1958_present.json"
-s3_key_slim_csv = "dodgers/data/standings/dodgers_standings_1958_present_optimized.csv"
-s3_key_slim_json = "dodgers/data/standings/dodgers_standings_1958_present_optimized.json"
-s3_key_parquet = "dodgers/data/standings/dodgers_standings_1958_present.parquet"
+csv_file = f"{output_dir}/giants_standings_1958_present.csv"
+csv_file_slim = f"{output_dir}/giants_standings_1958_present_optimized.csv"
+json_file = f"{output_dir}/giants_standings_1958_present.json"
+json_file_slim = f"{output_dir}/giants_standings_1958_present_optimized.json"
+historic_file = "https://wilkens.infosci.cornell.edu/giants/data/standings/archive/giants_standings_1958_2023.parquet"
+parquet_file = f"{output_dir}/giants_standings_1958_present.parquet"
+s3_bucket = "wilkens.infosci.cornell.edu"
+s3_key_csv = "giants/data/standings/giants_standings_1958_present.csv"
+s3_key_json = "giants/data/standings/giants_standings_1958_present.json"
+s3_key_slim_csv = "giants/data/standings/giants_standings_1958_present_optimized.csv"
+s3_key_slim_json = "giants/data/standings/giants_standings_1958_present_optimized.json"
+s3_key_parquet = "giants/data/standings/giants_standings_1958_present.parquet"
 
 
 # AWS session and S3 resource

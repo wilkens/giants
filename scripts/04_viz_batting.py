@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # LA Dodgers batting: Visualize season-level batting statistics
+# # SF Giants batting: Visualize season-level batting statistics
 # > This notebook reads our archive of team batting statistics for analysis and visualization.
 
 
@@ -21,7 +21,7 @@ alt.themes.enable("stiles")
 ## Read archive of aggregated team batting stats by season
 
 stats_df = pd.read_parquet(
-    "https://stilesdata.com/dodgers/data/batting/dodgers_team_batting_1958_present.parquet"
+    "https://wilkens.infosci.cornell.edu/giants/data/batting/giants_team_batting_1958_present.parquet"
 )
 
 

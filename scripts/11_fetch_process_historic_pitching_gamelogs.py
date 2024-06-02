@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # LA Dodgers pitching logs by season, 1958-2024
-# > This notebook visusalizes current and past game-by-game and cumulative totals for strikeouts, walks, ERA, etc., using data from [Baseball Reference](https://www.baseball-reference.com/teams/tgl.cgi?team=LAD&t=p&year=2024).
+# # SF Giants pitching logs by season, 1958-2024
+# > This notebook visusalizes current and past game-by-game and cumulative totals for strikeouts, walks, ERA, etc., using data from [Baseball Reference](https://www.baseball-reference.com/teams/tgl.cgi?team=SFG&t=p&year=2024).
 
 # ---
 
@@ -60,12 +60,12 @@ headers = {
 
 
 # Fetch archive game logs
-archive_url = "https://stilesdata.com/dodgers/data/pitching/archive/dodgers_historic_pitching_gamelogs_1958_2023.parquet"
+archive_url = "https://wilkens.infosci.cornell.edu/giants/data/pitching/archive/giants_historic_pitching_gamelogs_1958_2023.parquet"
 archive_df = pd.read_parquet(archive_url)
 
 
 # Fetch Current game logs
-current_url = f"https://www.baseball-reference.com/teams/tgl.cgi?team=LAD&t=p&year={year}"
+current_url = f"https://www.baseball-reference.com/teams/tgl.cgi?team=SFG&t=p&year={year}"
 current_src = pd.read_html(current_url)[1].assign(year=year).query('SO != "SO"')
 current_src.columns = current_src.columns.str.lower()
 
@@ -138,8 +138,8 @@ def save_to_s3(df, base_path, s3_bucket, formats):
             logging.error(f"Failed to upload {fmt} to S3: {e}")
 
 # Saving files locally and to S3
-file_path = os.path.join(data_dir, 'dodgers_historic_pitching_gamelogs_1958-present')
+file_path = os.path.join(data_dir, 'giants_historic_pitching_gamelogs_1958-present')
 formats = ["csv", "json", "parquet"]
 # save_dataframe(optimized_df, file_path, formats)
-save_to_s3(optimized_df, "dodgers/data/pitching/dodgers_historic_pitching_gamelogs_1958-present", "stilesdata.com", formats)
+save_to_s3(optimized_df, "giants/data/pitching/giants_historic_pitching_gamelogs_1958-present", "wilkens.infosci.cornell.edu", formats)
 

@@ -2,8 +2,8 @@
 # coding: utf-8
 
 """
-LA Dodgers cumulative batting statistics by season, 1958-2024
-This scrip visusalizes fetches and processes current and past game-by-game and cumulative totals for hits, doubles, home runs, walks, strikeouts and other statistics using data from [Baseball Reference](https://www.baseball-reference.com/teams/tgl.cgi?team=LAD&t=b&year=2024).
+SF Giants cumulative batting statistics by season, 1958-2024
+This scrip visusalizes fetches and processes current and past game-by-game and cumulative totals for hits, doubles, home runs, walks, strikeouts and other statistics using data from [Baseball Reference](https://www.baseball-reference.com/teams/tgl.cgi?team=SFG&t=b&year=2024).
 """
 
 import os
@@ -52,11 +52,11 @@ headers = {
 }
 
 # Fetch Archive game logs
-archive_url = "https://stilesdata.com/dodgers/data/batting/archive/dodgers_team_cumulative_batting_logs_1958_2023.parquet"
+archive_url = "https://wilkens.infosci.cornell.edu/giants/data/batting/archive/giants_team_cumulative_batting_logs_1958_2023.parquet"
 archive_df = pd.read_parquet(archive_url)
 
 # Fetch Current game logs
-current_url = f"https://www.baseball-reference.com/teams/tgl.cgi?team=LAD&t=b&year={year}"
+current_url = f"https://www.baseball-reference.com/teams/tgl.cgi?team=SFG&t=b&year={year}"
 current_df = pd.read_html(current_url)[0].assign(year=year).query('HR != "HR"')
 current_df.columns = current_df.columns.str.lower()
 
@@ -135,7 +135,7 @@ def save_to_s3(df, base_path, s3_bucket, formats):
             logging.error(f"Failed to upload {fmt} to S3: {e}")
 
 # Saving files locally and to S3
-file_path = os.path.join(data_dir, 'dodgers_historic_batting_gamelogs')
+file_path = os.path.join(data_dir, 'giants_historic_batting_gamelogs')
 formats = ["csv", "json", "parquet"]
 # save_dataframe(optimized_df, file_path, formats)
-save_to_s3(optimized_df, "dodgers/data/batting/archive/dodgers_historic_batting_gamelogs", "stilesdata.com", formats)
+save_to_s3(optimized_df, "giants/data/batting/archive/giants_historic_batting_gamelogs", "wilkens.infosci.cornell.edu", formats)

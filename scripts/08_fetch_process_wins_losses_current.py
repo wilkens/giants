@@ -2,7 +2,7 @@
 # coding: utf-8
 
 """
-LA Dodgers current season performance
+SF Giants current season performance
 This notebook downloads the team's current season and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
 """
 
@@ -48,7 +48,7 @@ year = pd.to_datetime("now").strftime("%Y")
 Fetch
 """
 
-df = pd.read_parquet('https://stilesdata.com/dodgers/data/standings/dodgers_standings_1958_present.parquet')
+df = pd.read_parquet('https://wilkens.infosci.cornell.edu/giants/data/standings/giants_standings_1958_present.parquet')
 
 wl_df = df.query("year == '2024'")[["gm", "game_date", "result", "r", "ra"]].copy()
 wl_df["result"] = wl_df["result"].str.split("-", expand=True)[0]
@@ -93,7 +93,7 @@ def save_to_s3(df, base_path, s3_bucket, formats):
             logging.error(f"Failed to upload {fmt} to S3: {e}")
 
 # Saving files locally and to S3
-file_path = os.path.join(data_dir, 'dodgers_wins_losses_current')
+file_path = os.path.join(data_dir, 'giants_wins_losses_current')
 formats = ["csv", "json", "parquet"]
 save_dataframe(wl_df, file_path, formats)
-save_to_s3(wl_df, "dodgers/data/standings/dodgers_wins_losses_current", "stilesdata.com", formats)
+save_to_s3(wl_df, "giants/data/standings/giants_wins_losses_current", "wilkens.infosci.cornell.edu", formats)

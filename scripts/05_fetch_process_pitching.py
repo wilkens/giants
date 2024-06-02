@@ -2,8 +2,8 @@
 # coding: utf-8
 
 """
-LA Dodgers pitching
-This notebook downloads the team's current pitching table from [Baseball Reference](https://www.baseball-reference.com/teams/LAD/2024-pitching.shtml#all_team_pitching) and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
+SF Giants pitching
+This notebook downloads the team's current pitching table from [Baseball Reference](https://www.baseball-reference.com/teams/SFG/2024-pitching.shtml#all_team_pitching) and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
 """
 
 # Import Python tools
@@ -18,7 +18,7 @@ Fetch
 
 # Pitching table url for the current season
 year = pd.to_datetime("now").strftime("%Y")
-url = f"https://www.baseball-reference.com/teams/LAD/{year}-pitching.shtml#all_team_pitching"
+url = f"https://www.baseball-reference.com/teams/SFG/{year}-pitching.shtml#all_team_pitching"
 
 
 """
@@ -93,8 +93,8 @@ def save_dataframe(df, path_without_extension, formats):
 
 # Save local files
 formats = ["csv", "json", "parquet"]
-save_dataframe(totals, f"data/pitching/dodgers_pitching_totals_current", formats)
-save_dataframe(ranks, f"data/pitching/dodgers_pitching_ranks_current", formats)
+save_dataframe(totals, f"data/pitching/giants_pitching_totals_current", formats)
+save_dataframe(ranks, f"data/pitching/giants_pitching_ranks_current", formats)
 
 
 def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json", "parquet"], profile_name=None):
@@ -140,11 +140,11 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json", "parquet"], pro
 # Save to S3
 save_to_s3(
     totals,
-    "dodgers/data/pitching/dodgers_pitching_totals_current",
-    "stilesdata.com",
+    "giants/data/pitching/giants_pitching_totals_current",
+    "wilkens.infosci.cornell.edu",
 )
 save_to_s3(
     ranks,
-    "dodgers/data/pitching/dodgers_pitching_ranks_current",
-    "stilesdata.com",
+    "giants/data/pitching/giants_pitching_ranks_current",
+    "wilkens.infosci.cornell.edu",
 )

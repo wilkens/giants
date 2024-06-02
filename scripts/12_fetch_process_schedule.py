@@ -2,8 +2,8 @@
 # coding: utf-8
 
 """
-LA Dodgers schedule snapshot
-This notebook downloads the team's current standings table from [Baseball Reference](https://www.baseball-reference.com/teams/LAD/2024-schedule-scores.shtml) and creates a results/schedule table listing five games in the past and future.
+SF Giants schedule snapshot
+This notebook downloads the team's current standings table from [Baseball Reference](https://www.baseball-reference.com/teams/SFG/2024-schedule-scores.shtml) and creates a results/schedule table listing five games in the past and future.
 """
 
 # Import Python tools
@@ -65,7 +65,7 @@ mlb_teams = {
     "HOU": "Houston Astros",
     "KCR": "Kansas City Royals",
     "LAA": "Los Angeles Angels",
-    "LAD": "Los Angeles Dodgers",
+    "SFG": "Los Angeles Dodgers",
     "MIA": "Miami Marlins",
     "MIL": "Milwaukee Brewers",
     "MIN": "Minnesota Twins",
@@ -87,12 +87,12 @@ mlb_teams = {
 
 # Configuration
 year = 2024
-url = f"https://www.baseball-reference.com/teams/LAD/{year}-schedule-scores.shtml"
+url = f"https://www.baseball-reference.com/teams/SFG/{year}-schedule-scores.shtml"
 output_dir = "data/standings"
-csv_file = f"{output_dir}/dodgers_schedule.csv"
-json_file = f"{output_dir}/dodgers_schedule.json"
-parquet_file = f"{output_dir}/dodgers_schedule.parquet"
-s3_bucket = "stilesdata.com"
+csv_file = f"{output_dir}/giants_schedule.csv"
+json_file = f"{output_dir}/giants_schedule.json"
+parquet_file = f"{output_dir}/giants_schedule.parquet"
+s3_bucket = "wilkens.infosci.cornell.edu"
 
 
 def fetch_clean_current_schedule(url, year):
@@ -146,7 +146,7 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 
 
 # Saving files locally and to S3
-file_path = os.path.join(data_dir, 'dodgers_schedule')
+file_path = os.path.join(data_dir, 'giants_schedule')
 formats = ["csv", "json"]
 # save_dataframe(optimized_df, file_path, formats)
-save_to_s3(schedule_df, "dodgers/data/standings/dodgers_schedule", "stilesdata.com", formats)
+save_to_s3(schedule_df, "giants/data/standings/giants_schedule", "wilkens.infosci.cornell.edu", formats)

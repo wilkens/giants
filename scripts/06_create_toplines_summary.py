@@ -3,7 +3,7 @@
 
 
 """
-LA Dodgers toplines
+SF Giants toplines
 This notebook extracts key statistics from the project's processed tables for display in a dashboard.
 """
 
@@ -63,11 +63,11 @@ def to_ordinal(n):
     return str(n) + {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
 
 # URLs for data
-standings_url = "https://stilesdata.com/dodgers/data/standings/dodgers_standings_1958_present.parquet"
-batting_url = "https://stilesdata.com/dodgers/data/batting/dodgers_team_batting_1958_present.parquet"
-pitching_url = 'https://stilesdata.com/dodgers/data/pitching/dodgers_pitching_totals_current.parquet'
-pitching_ranks_url = 'https://stilesdata.com/dodgers/data/pitching/dodgers_pitching_ranks_current.parquet'
-batting_ranks_url = 'https://stilesdata.com/dodgers/data/batting/dodgers_team_batting_ranks_1958_present.parquet'
+standings_url = "https://wilkens.infosci.cornell.edu/giants/data/standings/giants_standings_1958_present.parquet"
+batting_url = "https://wilkens.infosci.cornell.edu/giants/data/batting/giants_team_batting_1958_present.parquet"
+pitching_url = 'https://wilkens.infosci.cornell.edu/giants/data/pitching/giants_pitching_totals_current.parquet'
+pitching_ranks_url = 'https://wilkens.infosci.cornell.edu/giants/data/pitching/giants_pitching_ranks_current.parquet'
+batting_ranks_url = 'https://wilkens.infosci.cornell.edu/giants/data/batting/giants_team_batting_ranks_1958_present.parquet'
 
 mlb_teams = {
     "ARI": "Arizona Diamondbacks",
@@ -83,7 +83,7 @@ mlb_teams = {
     "HOU": "Houston Astros",
     "KCR": "Kansas City Royals",
     "LAA": "Los Angeles Angels",
-    "LAD": "Los Angeles Dodgers",
+    "SFG": "Los Angeles Dodgers",
     "MIA": "Miami Marlins",
     "MIL": "Milwaukee Brewers",
     "MIN": "Minnesota Twins",
@@ -280,4 +280,4 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json"]):
         s3_resource.Bucket(s3_bucket).put_object(Key=file_path, Body=buffer, ContentType=content_type)
         logging.info(f"Uploaded {fmt} to {s3_bucket}/{file_path}")
 
-save_to_s3(summary_df, "dodgers/data/standings/season_summary_latest", "stilesdata.com")
+save_to_s3(summary_df, "giants/data/standings/season_summary_latest", "wilkens.infosci.cornell.edu")

@@ -2,9 +2,9 @@
 # coding: utf-8
 
 """
-LA Dodgers standings, 1958-2024
+SF Giants standings, 1958-2024
 This notebook visusalizes the team's historic standings with data from Baseball Reference.
-URL: https://www.baseball-reference.com/teams/LAD/2024-schedule-scores.shtml
+URL: https://www.baseball-reference.com/teams/SFG/2024-schedule-scores.shtml
 """
 
 import os
@@ -23,7 +23,7 @@ Fetch
 # Read historical archive, compiled in notebooks `00` and `01`, from S3
 
 df = pd.read_parquet(
-    "https://stilesdata.com/dodgers/data/standings/dodgers_standings_1958_present.parquet"
+    "https://wilkens.infosci.cornell.edu/giants/data/standings/giants_standings_1958_present.parquet"
 )
 
 game_number = df.query("game_date == game_date.max()")["gm"].iloc[0]
@@ -56,7 +56,7 @@ past = (
     .properties(
         width=800,
         height=400,
-        title="LA Dodgers historical standings",
+        title="SF Giants historical standings",
     )
 )
 
@@ -157,7 +157,7 @@ alt.Chart(limit_df.query(f"gm == {game_number}")).mark_bar().encode(
 ).properties(
     width=650,
     height=200,
-    title=f"LA Dodgers historical standings: Games back by game {game_number} of the season: 1958-2024",
+    title=f"SF Giants historical standings: Games back by game {game_number} of the season: 1958-2024",
 )
 
 
@@ -229,7 +229,7 @@ base = (
     .properties(
         height=1100,
         width=650,
-        title=f"Dodgers historical offense: Total runs through game {game_number}, 1958-2024",
+        title=f"SF Giants historical offense: Total runs through game {game_number}, 1958-2024",
     )
 )
 
@@ -268,7 +268,7 @@ final_chart = (
 ).properties(
     height=1100,
     width=650,
-    title=f"Dodgers historical offense: Total runs through game {game_number}, 1958-2024",
+    title=f"SF Giants historical offense: Total runs through game {game_number}, 1958-2024",
 ).configure_title(
     # fontSize=20,
     font=font

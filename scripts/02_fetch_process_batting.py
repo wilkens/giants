@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # LA Dodgers batting: Combine current season with historical archive
-# > This notebook downloads the team's current batting tables from [Baseball Reference](https://www.baseball-reference.com/teams/LAD/2024-batting.shtml), combines it with a historical archive to 1958 and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
+# # SF Giants batting: Combine current season with historical archive
+# > This notebook downloads the team's current batting tables from [Baseball Reference](https://www.baseball-reference.com/teams/SFG/2024-batting.shtml), combines it with a historical archive to 1958 and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
 
 # ---
 
@@ -29,7 +29,7 @@ print("Directory Contents: ", os.listdir())
 year = pd.to_datetime("now").strftime("%Y")
 
 
-url = f"https://www.baseball-reference.com/teams/LAD/{year}-batting.shtml"
+url = f"https://www.baseball-reference.com/teams/SFG/{year}-batting.shtml"
 
 
 # #### Fetch batters table, excluding team totals
@@ -175,7 +175,7 @@ team_ranks_df = summary_df.query('name.str.contains("Rank")').dropna(axis=1)
 # #### Concatenate current season player totals with historical player archive
 
 player_totals_archive_df = pd.read_parquet(
-    "https://stilesdata.com/dodgers/data/batting/archive/dodgers_player_batting_statistics_1958_2023.parquet"
+    "https://wilkens.infosci.cornell.edu/giants/data/batting/archive/giants_player_batting_statistics_1958_2023.parquet"
 )
 
 
@@ -187,7 +187,7 @@ players_full_df = (
 
 
 team_totals_archive_df = pd.read_parquet(
-    "https://stilesdata.com/dodgers/data/batting/archive/dodgers_team_batting_statistics_1958_2023.parquet"
+    "https://wilkens.infosci.cornell.edu/giants/data/batting/archive/giants_team_batting_statistics_1958_2023.parquet"
 )
 
 
@@ -199,7 +199,7 @@ team_full_df = (
 
 
 team_ranks_archive_df = pd.read_parquet(
-    "https://stilesdata.com/dodgers/data/batting/archive/dodgers_team_batting_rankings_1958_2023.parquet"
+    "https://wilkens.infosci.cornell.edu/giants/data/batting/archive/giants_team_batting_rankings_1958_2023.parquet"
 )
 
 
@@ -234,15 +234,15 @@ try:
     formats = ["csv", "json", "parquet"]
     save_dataframe(
         players_full_df,
-        f"../data/batting/dodgers_player_batting_1958_present",
+        f"../data/batting/giants_player_batting_1958_present",
         formats,
     )
     save_dataframe(
-        team_full_df, f"../data/batting/dodgers_team_batting_1958_present", formats
+        team_full_df, f"../data/batting/giants_team_batting_1958_present", formats
     )
     save_dataframe(
         team_ranks_full_df,
-        f"../data/batting/dodgers_team_batting_ranks_1958_present",
+        f"../data/batting/giants_team_batting_ranks_1958_present",
         formats,
     )
 except Exception as e:
@@ -289,16 +289,16 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json", "parquet"]):
 # Save to S3
 save_to_s3(
     players_full_df,
-    "dodgers/data/batting/dodgers_player_batting_1958_present",
-    "stilesdata.com",
+    "giants/data/batting/giants_player_batting_1958_present",
+    "wilkens.infosci.cornell.edu",
 )
 save_to_s3(
     team_full_df,
-    "dodgers/data/batting/dodgers_team_batting_1958_present",
-    "stilesdata.com",
+    "giants/data/batting/giants_team_batting_1958_present",
+    "wilkens.infosci.cornell.edu",
 )
 save_to_s3(
     team_ranks_full_df,
-    "dodgers/data/batting/dodgers_team_batting_ranks_1958_present",
-    "stilesdata.com",
+    "giants/data/batting/giants_team_batting_ranks_1958_present",
+    "wilkens.infosci.cornell.edu",
 )
