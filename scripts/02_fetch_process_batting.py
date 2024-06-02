@@ -160,7 +160,7 @@ player_totals_df[["ba", "obp", "slg", "ops", "ops_plus"]] = player_totals_df[
 
 # #### Team totals
 
-player_totals_df = summary_df.query('name == "Team Totals"').dropna(axis=1)
+team_totals_df = summary_df.query('name == "Team Totals"').dropna(axis=1)
 
 
 # #### Team ranks
