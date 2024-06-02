@@ -4,7 +4,7 @@
 async function fetchData() {
   try {
     const response = await d3.json(
-      'https://stilesdata.com/dodgers/data/standings/dodgers_standings_1958_present_optimized.json'
+      'https://wilkens.infosci.cornell.edu/giants/data/standings/giants_standings_1958_present_optimized.json'
     );
     // Group data by year
     const groupedByYear = d3.group(response, (d) => d.year);
@@ -161,7 +161,7 @@ function renderChart(data) {
     .attr('x', xScale(lastData2024.gm + 1))
     .attr('y', yScale(lastData2024.gb) - 12)
     .text('2024')
-    .attr('class', 'anno-dodgers')
+    .attr('class', 'anno-giants')
     .style('stroke', '#fff')
     .style('stroke-width', '4px')
     .style('stroke-linejoin', 'round')
@@ -204,7 +204,7 @@ fetchData();
 
 async function fetchGameData() {
   try {
-    const response = await d3.json('https://stilesdata.com/dodgers/data/standings/dodgers_wins_losses_current.json');
+    const response = await d3.json('https://wilkens.infosci.cornell.edu/giants/data/standings/giants_wins_losses_current.json');
     response.reverse(); // Reverse the array to start from the beginning of the season
     renderRunDiffChart(response);
   } catch (error) {
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
   async function fetchCumulativeWinsData() {
     try {
       const response = await d3.json(
-        'https://stilesdata.com/dodgers/data/standings/dodgers_standings_1958_present.json'
+        'https://wilkens.infosci.cornell.edu/giants/data/standings/giants_standings_1958_present.json'
       );
       // Calculate cumulative wins for each game
       const dataWithCumulativeWins = calculateCumulativeWins(response);
@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .attr('x', xScale(lastDataCurrentYear.gm + 1))
       .attr('y', yScale(lastDataCurrentYear.wins) - 12)
       .text(currentYear)
-      .attr('class', 'anno-dodgers')
+      .attr('class', 'anno-giants')
       .style('stroke', '#fff')
       .style('stroke-width', '4px')
       .style('stroke-linejoin', 'round')
@@ -540,7 +540,7 @@ document.addEventListener('DOMContentLoaded', function() {
       async function fetchData() {
         try {
           const response = await d3.json(
-            'https://stilesdata.com/dodgers/data/batting/archive/dodgers_historic_batting_gamelogs.json'
+            'https://wilkens.infosci.cornell.edu/giants/data/batting/archive/giants_historic_batting_gamelogs.json'
           );
           const groupedData = d3.group(response, (d) => d.year.toString());
           const maxVal = d3.max(response, d => Math.max(d['2b_cum'], d['hr_cum']));
@@ -660,7 +660,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .attr('x', xScale(lastDataCurrentYear.gtm + 1))
             .attr('y', yScale(lastDataCurrentYear[config.dataField]) - 12)
             .text(currentYear)
-            .attr('class', 'anno-dodgers')
+            .attr('class', 'anno-giants')
             .style('stroke', '#fff')
             .style('stroke-width', '4px')
             .style('stroke-linejoin', 'round')
@@ -717,7 +717,7 @@ document.addEventListener('DOMContentLoaded', function() {
   async function fetchData() {
     try {
       const response = await d3.json(
-        'https://stilesdata.com/dodgers/data/pitching/dodgers_historic_pitching_gamelogs_1958-present.json'
+        'https://wilkens.infosci.cornell.edu/giants/data/pitching/giants_historic_pitching_gamelogs_1958-present.json'
       );
       const groupedData = d3.group(response, (d) => d.year.toString());
       const maxVal = d3.max(response, d => Math.max(d['so_cum'], d['h_cum']));
@@ -831,7 +831,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .attr('x', xScale(lastDataCurrentYear.gtm + 1))
         .attr('y', yScale(lastDataCurrentYear[config.dataField]) - 12)
         .text(currentYear)
-        .attr('class', 'anno-dodgers')
+        .attr('class', 'anno-giants')
         .style('stroke', '#fff')
         .style('stroke-width', '4px')
         .style('stroke-linejoin', 'round')
@@ -873,7 +873,7 @@ document.addEventListener('DOMContentLoaded', function() {
   async function fetchCumulativeERAData() {
     try {
       const response = await d3.json(
-        'https://stilesdata.com/dodgers/data/pitching/dodgers_historic_pitching_gamelogs_1958-present.json'
+        'https://wilkens.infosci.cornell.edu/giants/data/pitching/giants_historic_pitching_gamelogs_1958-present.json'
       );
       // console.log('Fetched data:', response);
       // Group data by year
@@ -991,7 +991,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .attr('x', xScale(lastDataCurrentYear.gtm + 1))
         .attr('y', yScale(lastDataCurrentYear.era_cum) - 12)
         .text(currentYear)
-        .attr('class', 'anno-dodgers')
+        .attr('class', 'anno-giants')
         .style('stroke', '#fff')
         .style('stroke-width', '4px')
         .style('stroke-linejoin', 'round')
@@ -1061,7 +1061,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const fetchDataAndRenderTables = async () => {
     try {
-      const response = await fetch('https://stilesdata.com/dodgers/data/standings/dodgers_schedule.json');
+      const response = await fetch('https://wilkens.infosci.cornell.edu/giants/data/standings/giants_schedule.json');
       const games = await response.json();
 
       const lastGames = games.filter(game => game.placement === 'last');
@@ -1080,7 +1080,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const url = 'https://stilesdata.com/dodgers/data/batting/dodgers_player_batting_current_table.json';
+  const url = 'https://wilkens.infosci.cornell.edu/giants/data/batting/giants_player_batting_current_table.json';
 
   const fetchDataAndRenderBattingTables = async () => {
       try {
@@ -1174,7 +1174,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // document.addEventListener('DOMContentLoaded', function () {
-//     const url = 'https://stilesdata.com/dodgers/data/batting/dodgers_player_batting_current_table.json';
+//     const url = 'https://wilkens.infosci.cornell.edu/giants/data/batting/giants_player_batting_current_table.json';
 
 //     const fetchDataAndRenderBattingTables = async () => {
 //         try {
@@ -1273,7 +1273,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   async function fetchTableData() {
     try {
-      const response = await d3.json('https://stilesdata.com/dodgers/data/standings/mlb_team_attendance.json');
+      const response = await d3.json('https://wilkens.infosci.cornell.edu/giants/data/standings/mlb_team_attendance.json');
       renderTables(response);
       renderMaxAttendanceInfo(response);
     } catch (error) {
@@ -1327,12 +1327,12 @@ document.addEventListener('DOMContentLoaded', function () {
       .style('width', '100%')
       .each(function (d) {
         const barWidth = (d.attend_game / maxAttendance) * 100;
-        const isDodgers = d.team === 'Los Angeles Dodgers';
+        const isDodgers = d.team === 'San Francisco Giants';
         d3.select(this).append('div')
-          .attr('class', `attendance-bar-bg ${isDodgers ? 'attendance-bar-dodgers' : ''}`)
+          .attr('class', `attendance-bar-bg ${isDodgers ? 'attendance-bar-giants' : ''}`)
           .style('width', `${barWidth}%`);
         d3.select(this).append('div')
-          .attr('class', `attendance-bar-text ${isDodgers ? 'attendance-bar-dodgers' : ''}`)
+          .attr('class', `attendance-bar-text ${isDodgers ? 'attendance-bar-giants' : ''}`)
           .text(d.attend_game.toLocaleString());
       });
   }
