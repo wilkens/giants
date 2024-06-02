@@ -52,7 +52,7 @@ headers = {
 }
 
 # Fetch Archive game logs
-archive_url = "http://giantsdata.s3-website-us-east-1.amazonaws.com//giants/data/batting/archive/giants_team_cumulative_batting_logs_1958_2023.parquet"
+archive_url = "http://giantsdata.s3-website-us-east-1.amazonaws.com/giants/data/batting/archive/giants_team_cumulative_batting_logs_1958_2023.parquet"
 archive_df = pd.read_parquet(archive_url)
 
 # Fetch Current game logs
@@ -138,4 +138,4 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 file_path = os.path.join(data_dir, 'giants_historic_batting_gamelogs')
 formats = ["csv", "json", "parquet"]
 # save_dataframe(optimized_df, file_path, formats)
-save_to_s3(optimized_df, "giants/data/batting/archive/giants_historic_batting_gamelogs", "wilkens.infosci.cornell.edu", formats)
+save_to_s3(optimized_df, "giants/data/batting/archive/giants_historic_batting_gamelogs", "giantsdata", formats)

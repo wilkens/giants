@@ -63,11 +63,11 @@ def to_ordinal(n):
     return str(n) + {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
 
 # URLs for data
-standings_url = "http://giantsdata.s3-website-us-east-1.amazonaws.com//giants/data/standings/giants_standings_1958_present.parquet"
-batting_url = "http://giantsdata.s3-website-us-east-1.amazonaws.com//giants/data/batting/giants_team_batting_1958_present.parquet"
-pitching_url = 'http://giantsdata.s3-website-us-east-1.amazonaws.com//giants/data/pitching/giants_pitching_totals_current.parquet'
-pitching_ranks_url = 'http://giantsdata.s3-website-us-east-1.amazonaws.com//giants/data/pitching/giants_pitching_ranks_current.parquet'
-batting_ranks_url = 'http://giantsdata.s3-website-us-east-1.amazonaws.com//giants/data/batting/giants_team_batting_ranks_1958_present.parquet'
+standings_url = "http://giantsdata.s3-website-us-east-1.amazonaws.com/giants/data/standings/giants_standings_1958_present.parquet"
+batting_url = "http://giantsdata.s3-website-us-east-1.amazonaws.com/giants/data/batting/giants_team_batting_1958_present.parquet"
+pitching_url = 'http://giantsdata.s3-website-us-east-1.amazonaws.com/giants/data/pitching/giants_pitching_totals_current.parquet'
+pitching_ranks_url = 'http://giantsdata.s3-website-us-east-1.amazonaws.com/giants/data/pitching/giants_pitching_ranks_current.parquet'
+batting_ranks_url = 'http://giantsdata.s3-website-us-east-1.amazonaws.com/giants/data/batting/giants_team_batting_ranks_1958_present.parquet'
 
 mlb_teams = {
     "ARI": "Arizona Diamondbacks",
@@ -280,4 +280,4 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json"]):
         s3_resource.Bucket(s3_bucket).put_object(Key=file_path, Body=buffer, ContentType=content_type)
         logging.info(f"Uploaded {fmt} to {s3_bucket}/{file_path}")
 
-save_to_s3(summary_df, "giants/data/standings/season_summary_latest", "wilkens.infosci.cornell.edu")
+save_to_s3(summary_df, "giants/data/standings/season_summary_latest", "giantsdata")

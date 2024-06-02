@@ -141,10 +141,10 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json", "parquet"], pro
 save_to_s3(
     totals,
     "giants/data/pitching/giants_pitching_totals_current",
-    "wilkens.infosci.cornell.edu",
+    "giantsdata",
 )
 save_to_s3(
     ranks,
     "giants/data/pitching/giants_pitching_ranks_current",
-    "wilkens.infosci.cornell.edu",
+    "giantsdata",
 )

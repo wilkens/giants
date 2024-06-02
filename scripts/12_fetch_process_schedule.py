@@ -92,7 +92,7 @@ output_dir = "data/standings"
 csv_file = f"{output_dir}/giants_schedule.csv"
 json_file = f"{output_dir}/giants_schedule.json"
 parquet_file = f"{output_dir}/giants_schedule.parquet"
-s3_bucket = "wilkens.infosci.cornell.edu"
+s3_bucket = "giantsdata"
 
 
 def fetch_clean_current_schedule(url, year):
@@ -149,4 +149,4 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 file_path = os.path.join(data_dir, 'giants_schedule')
 formats = ["csv", "json"]
 # save_dataframe(optimized_df, file_path, formats)
-save_to_s3(schedule_df, "giants/data/standings/giants_schedule", "wilkens.infosci.cornell.edu", formats)
+save_to_s3(schedule_df, "giants/data/standings/giants_schedule", "giantsdata", formats)

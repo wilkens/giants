@@ -142,6 +142,6 @@ formats = ["csv", "json", "parquet"]
 save_to_s3(
     df,
     "giants/data/batting/giants_player_batting_current_table",
-    "wilkens.infosci.cornell.edu",
+    "giantsdata",
     formats,
 )

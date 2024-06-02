@@ -48,7 +48,7 @@ year = pd.to_datetime("now").strftime("%Y")
 Fetch
 """
 
-df = pd.read_parquet('http://giantsdata.s3-website-us-east-1.amazonaws.com//giants/data/standings/giants_standings_1958_present.parquet')
+df = pd.read_parquet('http://giantsdata.s3-website-us-east-1.amazonaws.com/giants/data/standings/giants_standings_1958_present.parquet')
 
 wl_df = df.query("year == '2024'")[["gm", "game_date", "result", "r", "ra"]].copy()
 wl_df["result"] = wl_df["result"].str.split("-", expand=True)[0]
@@ -96,4 +96,4 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 file_path = os.path.join(data_dir, 'giants_wins_losses_current')
 formats = ["csv", "json", "parquet"]
 save_dataframe(wl_df, file_path, formats)
-save_to_s3(wl_df, "giants/data/standings/giants_wins_losses_current", "wilkens.infosci.cornell.edu", formats)
+save_to_s3(wl_df, "giants/data/standings/giants_wins_losses_current", "giantsdata", formats)

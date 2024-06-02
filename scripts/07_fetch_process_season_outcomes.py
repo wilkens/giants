@@ -158,7 +158,7 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 file_path = os.path.join(data_dir, 'giants_season_outcomes')
 formats = ["csv", "json", "parquet"]
 save_dataframe(history_df, file_path, formats)
-save_to_s3(history_df, "giants/data/standings/giants_season_outcomes", "wilkens.infosci.cornell.edu", formats)
+save_to_s3(history_df, "giants/data/standings/giants_season_outcomes", "giantsdata", formats)
 
 file_path = os.path.join(data_dir, 'giants_season_outcomes')
 formats = ["csv", "json", "parquet"]
