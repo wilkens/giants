@@ -3,7 +3,7 @@
 
 """
 SF Giants cumulative batting statistics by season, 1958-2024
-This scrip visusalizes fetches and processes current and past game-by-game and cumulative totals for hits, doubles, home runs, walks, strikeouts and other statistics using data from [Baseball Reference](https://www.baseball-reference.com/teams/tgl.cgi?team=SFG&t=b&year=2024).
+This script visusalizes fetches and processes current and past game-by-game and cumulative totals for hits, doubles, home runs, walks, strikeouts and other statistics using data from [Baseball Reference](https://www.baseball-reference.com/teams/tgl.cgi?team=SFG&t=b&year=2024).
 """
 
 import os

@@ -160,7 +160,7 @@ player_totals_df[["ba", "obp", "slg", "ops", "ops_plus"]] = player_totals_df[
 
 # #### Team totals
 
-team_totals_df = summary_df.query('name == "Team Totals"').dropna(axis=1)
+player_totals_df = summary_df.query('name == "Team Totals"').dropna(axis=1)
 
 
 # #### Team ranks
@@ -169,6 +169,26 @@ team_ranks_df = summary_df.query('name.str.contains("Rank")').dropna(axis=1)
 
 
 # ---
+
+## Save for inital use
+try:
+    formats = ["csv", "json", "parquet"]
+    save_dataframe(
+        player_totals_df,
+        f"../data/batting/giants_player_batting_1958_present",
+        formats,
+    )
+    save_dataframe(
+        player_totals_df, f"../data/batting/giants_team_batting_1958_present", formats
+    )
+    save_dataframe(
+        team_ranks_df,
+        f"../data/batting/giants_team_batting_ranks_1958_present",
+        formats,
+    )
+except Exception as e:
+    print(f"An error occurred: {e}")
+
 
 # ## Combine
 
