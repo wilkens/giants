@@ -63,11 +63,11 @@ def to_ordinal(n):
     return str(n) + {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
 
 # URLs for data
-standings_url = "https://wilkens.infosci.cornell.edu/giants/data/standings/giants_standings_1958_present.parquet"
-batting_url = "https://wilkens.infosci.cornell.edu/giants/data/batting/giants_team_batting_1958_present.parquet"
-pitching_url = 'https://wilkens.infosci.cornell.edu/giants/data/pitching/giants_pitching_totals_current.parquet'
-pitching_ranks_url = 'https://wilkens.infosci.cornell.edu/giants/data/pitching/giants_pitching_ranks_current.parquet'
-batting_ranks_url = 'https://wilkens.infosci.cornell.edu/giants/data/batting/giants_team_batting_ranks_1958_present.parquet'
+standings_url = "http://wilkens.infosci.cornell.edu/giants/data/standings/giants_standings_1958_present.parquet"
+batting_url = "http://wilkens.infosci.cornell.edu/giants/data/batting/giants_team_batting_1958_present.parquet"
+pitching_url = 'http://wilkens.infosci.cornell.edu/giants/data/pitching/giants_pitching_totals_current.parquet'
+pitching_ranks_url = 'http://wilkens.infosci.cornell.edu/giants/data/pitching/giants_pitching_ranks_current.parquet'
+batting_ranks_url = 'http://wilkens.infosci.cornell.edu/giants/data/batting/giants_team_batting_ranks_1958_present.parquet'
 
 mlb_teams = {
     "ARI": "Arizona Diamondbacks",

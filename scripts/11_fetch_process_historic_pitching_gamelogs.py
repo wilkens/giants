@@ -60,7 +60,7 @@ headers = {
 
 
 # Fetch archive game logs
-archive_url = "https://wilkens.infosci.cornell.edu/giants/data/pitching/archive/giants_historic_pitching_gamelogs_1958_2023.parquet"
+archive_url = "http://wilkens.infosci.cornell.edu/giants/data/pitching/archive/giants_historic_pitching_gamelogs_1958_2023.parquet"
 archive_df = pd.read_parquet(archive_url)
 
 

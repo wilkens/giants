@@ -48,7 +48,7 @@ year = pd.to_datetime("now").strftime("%Y")
 Fetch
 """
 
-df = pd.read_parquet('https://wilkens.infosci.cornell.edu/giants/data/standings/giants_standings_1958_present.parquet')
+df = pd.read_parquet('http://wilkens.infosci.cornell.edu/giants/data/standings/giants_standings_1958_present.parquet')
 
 wl_df = df.query("year == '2024'")[["gm", "game_date", "result", "r", "ra"]].copy()
 wl_df["result"] = wl_df["result"].str.split("-", expand=True)[0]
