@@ -52,7 +52,7 @@ headers = {
 }
 
 # Fetch Archive game logs
-archive_url = "http://giantsdata.s3-website-us-east-1.amazonaws.com/giants/data/batting/archive/giants_team_cumulative_batting_logs_1958_2023.parquet"
+archive_url = "http://giantsdata.s3.amazonaws.com/giants/data/batting/archive/giants_team_cumulative_batting_logs_1958_2023.parquet"
 archive_df = pd.read_parquet(archive_url)
 
 # Fetch Current game logs
