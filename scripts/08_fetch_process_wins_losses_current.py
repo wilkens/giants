@@ -96,4 +96,4 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 file_path = os.path.join(data_dir, 'giants_wins_losses_current')
 formats = ["csv", "json", "parquet"]
 save_dataframe(wl_df, file_path, formats)
-save_to_s3(wl_df, "giants/data/standings/giants_wins_losses_current", "giantsdata", formats)
+save_to_s3(wl_df, "data/standings/giants_wins_losses_current", "giantsdata", formats)

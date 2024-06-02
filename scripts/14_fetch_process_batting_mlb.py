@@ -141,7 +141,7 @@ formats = ["csv", "json", "parquet"]
 # save_dataframe(optimized_df, file_path, formats)
 save_to_s3(
     df,
-    "giants/data/batting/giants_player_batting_current_table",
+    "data/batting/giants_player_batting_current_table",
     "giantsdata",
     formats,
 )

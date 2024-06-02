@@ -149,4 +149,4 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 file_path = os.path.join(data_dir, 'giants_schedule')
 formats = ["csv", "json"]
 # save_dataframe(optimized_df, file_path, formats)
-save_to_s3(schedule_df, "giants/data/standings/giants_schedule", "giantsdata", formats)
+save_to_s3(schedule_df, "data/standings/giants_schedule", "giantsdata", formats)

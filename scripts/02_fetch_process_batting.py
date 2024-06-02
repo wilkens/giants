@@ -289,16 +289,16 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json", "parquet"]):
 # Save to S3
 save_to_s3(
     players_full_df,
-    "giants/data/batting/giants_player_batting_1958_present",
+    "data/batting/giants_player_batting_1958_present",
     "giantsdata",
 )
 save_to_s3(
     team_full_df,
-    "giants/data/batting/giants_team_batting_1958_present",
+    "data/batting/giants_team_batting_1958_present",
     "giantsdata",
 )
 save_to_s3(
     team_ranks_full_df,
-    "giants/data/batting/giants_team_batting_ranks_1958_present",
+    "data/batting/giants_team_batting_ranks_1958_present",
     "giantsdata",
 )

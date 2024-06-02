@@ -38,11 +38,11 @@ json_file_slim = f"{output_dir}/giants_standings_1958_present_optimized.json"
 historic_file = "https://giantsdata.s3.amazonaws.com/data/standings/archive/giants_standings_1958_2023.parquet"
 parquet_file = f"{output_dir}/giants_standings_1958_present.parquet"
 s3_bucket = "giantsdata"
-s3_key_csv = "giants/data/standings/giants_standings_1958_present.csv"
-s3_key_json = "giants/data/standings/giants_standings_1958_present.json"
-s3_key_slim_csv = "giants/data/standings/giants_standings_1958_present_optimized.csv"
-s3_key_slim_json = "giants/data/standings/giants_standings_1958_present_optimized.json"
-s3_key_parquet = "giants/data/standings/giants_standings_1958_present.parquet"
+s3_key_csv = "data/standings/giants_standings_1958_present.csv"
+s3_key_json = "data/standings/giants_standings_1958_present.json"
+s3_key_slim_csv = "data/standings/giants_standings_1958_present_optimized.csv"
+s3_key_slim_json = "data/standings/giants_standings_1958_present_optimized.json"
+s3_key_parquet = "data/standings/giants_standings_1958_present.parquet"
 
 
 # AWS session and S3 resource
