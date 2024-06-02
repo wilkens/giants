@@ -23,7 +23,7 @@ Fetch
 # Read historical archive, compiled in notebooks `00` and `01`, from S3
 
 df = pd.read_parquet(
-    "http://giantsdata.s3.amazonaws.com/giants/data/standings/archive/giants_standings_1958_present.parquet"
+    "https://giantsdata.s3.amazonaws.com/data/standings/archive/giants_standings_1958_present.parquet"
 )
 
 game_number = df.query("game_date == game_date.max()")["gm"].iloc[0]

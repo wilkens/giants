@@ -21,7 +21,7 @@ alt.themes.enable("stiles")
 ## Read archive of aggregated team batting stats by season
 
 stats_df = pd.read_parquet(
-    "http://giantsdata.s3.amazonaws.com/giants/data/batting/giants_team_batting_1958_present.parquet"
+    "https://giantsdata.s3.amazonaws.com/data/batting/giants_team_batting_1958_present.parquet"
 )
 
 
