@@ -264,7 +264,7 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json"]):
     session = boto3.Session(
         aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"),
         aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
-        region_name="us-west-1"
+        region_name="us-east-1"
     )
     s3_resource = session.resource("s3")
     for fmt in formats:

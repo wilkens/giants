@@ -21,7 +21,7 @@ is_github_actions = os.getenv("GITHUB_ACTIONS") == "true"
 # AWS credentials and session initialization
 aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
-aws_region = "us-west-1"
+aws_region = "us-east-1"
 
 # Conditional AWS session creation based on the environment
 if is_github_actions:
@@ -33,7 +33,7 @@ if is_github_actions:
     )
 else:
     # Locally, use a specific profile
-    session = boto3.Session(profile_name="haekeo", region_name=aws_region)
+    session = boto3.Session(profile_name="mattwilkens", region_name=aws_region)
 
 s3_resource = session.resource("s3")
 
