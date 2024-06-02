@@ -1,4 +1,4 @@
-name: run_dodgers
+name: run_giants
 
 on:
   schedule:
@@ -25,7 +25,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-west-1
+        aws-region: us-east-1
 
     - name: Install dependencies
       run: |
@@ -85,9 +85,9 @@ jobs:
     - name: Commit updated files
       if: steps.changes.outputs.changes == 'true'
       run: |
-        git config --global user.name 'Matt Stiles'
-        git config --global user.email 'haekeostiles@gmail.com'
-        git commit -m "Automated update of Dodgers data, visuals"
+        git config --global user.name 'Matthew Wilkens'
+        git config --global user.email 'mattwilkens@gmail.com'
+        git commit -m "Automated update of Giants data, visuals"
   
     - name: Push changes
       if: steps.changes.outputs.changes == 'true'
