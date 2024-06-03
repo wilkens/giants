@@ -269,7 +269,7 @@ function renderRunDiffChart(data) {
     .attr("y", d => yScale(Math.max(0, d.run_diff)))
     .attr("width", xScale.bandwidth())
     .attr("height", d => Math.abs(yScale(d.run_diff) - yScale(0)))
-    .attr("fill", d => d.run_diff >= 0 ? "#27251F" : "#ef3e42");
+    .attr("fill", d => d.run_diff >= 0 ? "#27251F" : "#FD5A1E");
   
 }
 fetchGameData();
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .attr('class', 'line line-selected-year')
         .attr('d', (d) => line(d[1]))
         .style('fill', 'none')
-        .style('stroke', '#ef3e42') // Dodger Red
+        .style('stroke', '#FD5A1E') // Dodger Red
         .style('stroke-width', 1.5);
 
       // Add text annotation for the selected year
@@ -1134,16 +1134,16 @@ document.addEventListener('DOMContentLoaded', function () {
       if (field === 'soper') {
           // Red color scale for strikeouts, reversed scale
           // return getColorFromScale(value, min, max, '#ffcccc', '#ff0000', true);
-          return getColorFromScale(value, min, max, '#27251F', '#cce5ff', false);
+          return getColorFromScale(value, min, max, '', '#c4c4c4', false);
       } else {
           // Blue color scale for other metrics
-          return getColorFromScale(value, min, max, '#cce5ff', '#27251F', false);
+          return getColorFromScale(value, min, max, '#c4c4c4', '#27251F', false);
       }
   };
 
   const getColorScaleBlue = (field, value, min, max) => {
       // Blue color scale for batting stats
-      return getColorFromScale(value, min, max, '#cce5ff', '#27251F', false);
+      return getColorFromScale(value, min, max, '#c4c4c4', '#27251F', false);
   };
 
   const getColorFromScale = (value, min, max, colorMin, colorMax, reverse = false) => {
