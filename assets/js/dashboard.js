@@ -1327,12 +1327,12 @@ document.addEventListener('DOMContentLoaded', function () {
       .style('width', '100%')
       .each(function (d) {
         const barWidth = (d.attend_game / maxAttendance) * 100;
-        const isDodgers = d.team === 'San Francisco Giants';
+        const isGiants = d.team === 'San Francisco Giants';
         d3.select(this).append('div')
-          .attr('class', `attendance-bar-bg ${isDodgers ? 'attendance-bar-giants' : ''}`)
+          .attr('class', `attendance-bar-bg ${isGiants ? 'attendance-bar-giants' : ''}`)
           .style('width', `${barWidth}%`);
         d3.select(this).append('div')
-          .attr('class', `attendance-bar-text ${isDodgers ? 'attendance-bar-giants' : ''}`)
+          .attr('class', `attendance-bar-text ${isGiants ? 'attendance-bar-giants' : ''}`)
           .text(d.attend_game.toLocaleString());
       });
   }
