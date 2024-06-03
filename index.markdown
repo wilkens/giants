@@ -13,7 +13,7 @@ permalink: /
     {% if last_game_result == 'win' %}
         <i class="fa-solid fa-arrow-trend-up" style="color: #27251F;"></i>
     {% else %}
-        <i class="fa-solid fa-arrow-trend-down" style="color: #ef3e42;"></i>
+        <i class="fa-solid fa-arrow-trend-down" style="color: #FD5A1E;"></i>
     {% endif %}
 </div>
 <h1 class="headline">{{ site.headline }}</h1>

@@ -158,13 +158,13 @@ body {
 
 .footer {
   background-color: c.$giants-gold;
-  color: c.$giants-red;
+  color: c.$giants-orange;
 }
 
 .button-primary {
-  background-color: c.$giants-red;
+  background-color: c.$giants-orange;
   &:hover {
-    background-color: darken(c.$giants-red, 10%);
+    background-color: darken(c.$giants-orange, 10%);
   }
 }
 
@@ -335,7 +335,7 @@ p {
 }
 
 .loss {
-  background: c.$giants-red;
+  background: c.$giants-orange;
   padding: 1px 4px;
   color: white;
 }
@@ -429,7 +429,7 @@ a {
 }
 
 .losing {
-  color: c.$giants-red;
+  color: c.$giants-orange;
 }
 
 .masthead {
@@ -553,7 +553,7 @@ a {
 }
 
 .loss {
-  background: c.$giants-red;
+  background: c.$giants-orange;
   padding: 1px 4px;
   color: white;
 }
@@ -877,7 +877,7 @@ hr.style-eight:after {
 }
 
 .anno-selected-year {
-  fill: c.$giants-red;
+  fill: c.$giants-orange;
   font-weight: bold;
   font-size: 14px;
   font-family: 'Roboto Slab', serif;
