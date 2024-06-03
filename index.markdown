@@ -55,7 +55,7 @@ permalink: /
 
 
 <h3 class="visual-subhead">Cumulative <span class="win">wins</span>: Then and now</h3>
-<p class="chart-chatter">Since moving to San Francisco, the Giants have won the World Series three times: 2014, 2012, 2010. Compare this year's win trajectory with the past.</p>
+<p class="chart-chatter">Since moving to San Francisco, the Giants have won the World Series three times, in 2014, 2012, and 2010. Compare this year's win trajectory with the past.</p>
 <select id="year-select">
   <option>Previous seasons</option>
 </select>
@@ -214,7 +214,7 @@ permalink: /
     </div>
 </div>
 
-  <p class="dated">Notes: Last updated {{ site.data.season_summary_latest | where: "stat", "update_time" | map: "value" | first }}. More <a href="https://github.com/stiles/dodgers/blob/main/README.md">about the data</a>.</p>
+  <p class="dated">Notes: Last updated {{ site.data.season_summary_latest | where: "stat", "update_time" | map: "value" | first }}. More <a href="https://github.com/wilkens/giants/blob/main/README.md">about the data</a>. Based on the work on Matt Stiles, who built the <a href="https://github.com/stiles/dodgers/tree/main">system for the Dodgers</a>.</p>
   
 </div>
 
