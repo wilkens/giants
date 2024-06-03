@@ -62,7 +62,7 @@ past = (
 
 current = (
     alt.Chart(df.query("year == '2024'"))
-    .mark_line(size=2, color="#005A9C")
+    .mark_line(size=2, color="#27251F")
     .encode(
         x=alt.X("gm", scale=alt.Scale(domain=[0, 160])),  # Apply the same domain limit
         y="gb:Q",
@@ -119,7 +119,7 @@ current_text_annotation = (
         dy=-30,
         fontSize=12,
         fontWeight="bold",
-        color="#005A9C",  # Match the line color or choose a different one
+        color="#27251F",  # Match the line color or choose a different one
     )
     .encode(x=alt.X("gm:Q"), y=alt.Y("gb:Q"), text="annotation:N")
 )
@@ -151,7 +151,7 @@ alt.Chart(limit_df.query(f"gm == {game_number}")).mark_bar().encode(
     y=alt.Y("gb:Q", title=""),
     color=alt.condition(
         alt.datum.gb > 0,
-        alt.value("#005A9C"),
+        alt.value("#27251F"),
         alt.value("#e9e9e9"),
     ),
 ).properties(
@@ -233,7 +233,7 @@ base = (
     )
 )
 
-base.mark_bar(color="#005A9C") + base.mark_text(align="left", dx=2, color="#000")
+base.mark_bar(color="#27251F") + base.mark_text(align="left", dx=2, color="#000")
 
 # Define the vertical line for "runs_this_season"
 vertical_line = (
@@ -261,7 +261,7 @@ text_annotation = (
 
 # Combine your base chart with the vertical line and text annotation
 final_chart = (
-    base.mark_bar(color="#005A9C")
+    base.mark_bar(color="#27251F")
     + base.mark_text(align="left", dx=2, color="#000")
     + vertical_line
     + text_annotation

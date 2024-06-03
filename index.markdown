@@ -11,7 +11,7 @@ permalink: /
     {% assign last_game_result_array = site.data.season_summary_latest | where: "stat", "last_game_result" %}
     {% assign last_game_result = last_game_result_array[0].value %}
     {% if last_game_result == 'win' %}
-        <i class="fa-solid fa-arrow-trend-up" style="color: #005a9c;"></i>
+        <i class="fa-solid fa-arrow-trend-up" style="color: #27251F;"></i>
     {% else %}
         <i class="fa-solid fa-arrow-trend-down" style="color: #ef3e42;"></i>
     {% endif %}

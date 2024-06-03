@@ -116,7 +116,7 @@ function renderChart(data) {
     .attr('class', 'line')
     .attr('d', (d) => line(d[1]))
     .style('fill', 'none')
-    .style('stroke', '#005A9C')
+    .style('stroke', '#27251F')
     .style('stroke-width', 2);
 
   // Add a horizontal line at y = 0
@@ -269,7 +269,7 @@ function renderRunDiffChart(data) {
     .attr("y", d => yScale(Math.max(0, d.run_diff)))
     .attr("width", xScale.bandwidth())
     .attr("height", d => Math.abs(yScale(d.run_diff) - yScale(0)))
-    .attr("fill", d => d.run_diff >= 0 ? "#005a9c" : "#ef3e42");
+    .attr("fill", d => d.run_diff >= 0 ? "#27251F" : "#ef3e42");
   
 }
 fetchGameData();
@@ -393,7 +393,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .attr('class', 'line line-current-year')
       .attr('d', (d) => line(d[1]))
       .style('fill', 'none')
-      .style('stroke', '#005A9C')
+      .style('stroke', '#27251F')
       .style('stroke-width', 2);
 
     svg
@@ -641,7 +641,7 @@ document.addEventListener('DOMContentLoaded', function() {
               return line(d[1]);
             })
             .style('fill', 'none')
-            .style('stroke', '#005A9C')
+            .style('stroke', '#27251F')
             .style('stroke-width', 2);
         }
     
@@ -812,7 +812,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .attr('class', 'line')
         .attr('d', (d) => line(d[1]))
         .style('fill', 'none')
-        .style('stroke', '#005A9C')
+        .style('stroke', '#27251F')
         .style('stroke-width', 2);
     }
 
@@ -980,7 +980,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .attr('class', 'line')
         .attr('d', line)
         .style('fill', 'none')
-        .style('stroke', '#005A9C')
+        .style('stroke', '#27251F')
         .style('stroke-width', 2);
 
       const lastDataCurrentYear = lineCurrentYear.slice(-1)[0];
@@ -1134,16 +1134,16 @@ document.addEventListener('DOMContentLoaded', function () {
       if (field === 'soper') {
           // Red color scale for strikeouts, reversed scale
           // return getColorFromScale(value, min, max, '#ffcccc', '#ff0000', true);
-          return getColorFromScale(value, min, max, '#005a9c', '#cce5ff', false);
+          return getColorFromScale(value, min, max, '#27251F', '#cce5ff', false);
       } else {
           // Blue color scale for other metrics
-          return getColorFromScale(value, min, max, '#cce5ff', '#005a9c', false);
+          return getColorFromScale(value, min, max, '#cce5ff', '#27251F', false);
       }
   };
 
   const getColorScaleBlue = (field, value, min, max) => {
       // Blue color scale for batting stats
-      return getColorFromScale(value, min, max, '#cce5ff', '#005a9c', false);
+      return getColorFromScale(value, min, max, '#cce5ff', '#27251F', false);
   };
 
   const getColorFromScale = (value, min, max, colorMin, colorMax, reverse = false) => {
