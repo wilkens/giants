@@ -23,7 +23,7 @@ Fetch
 # Read historical archive, compiled in notebooks `00` and `01`, from S3
 
 df = pd.read_parquet(
-    "https://giantsdata.s3.amazonaws.com/data/standings/archive/giants_standings_1958_present.parquet"
+    "https://giantsdata.s3.amazonaws.com/data/standings/giants_standings_1958_present.parquet"
 )
 
 game_number = df.query("game_date == game_date.max()")["gm"].iloc[0]
@@ -137,7 +137,7 @@ chart = (past + hline + current + text + anno_text + current_text_annotation).co
 chart
 
 
-chart.save("visuals/standings.png", scale_factor=2.0)
+chart.save("../visuals/standings.png", scale_factor=2.0)
 
 
 alt.Chart(limit_df.query(f"gm == {game_number}")).mark_bar().encode(
@@ -277,4 +277,4 @@ final_chart = (
     titleFont=font
 )
 
-final_chart.save("visuals/runs.png", scale_factor=2.0)
+final_chart.save("../visuals/runs.png", scale_factor=2.0)
