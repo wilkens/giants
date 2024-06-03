@@ -1,6 +1,12 @@
-# LA Dodgers team tracker
+# SF Giants team tracker
 
-This repository — a growing work in progress — feeds [Dodgers Data Bot](https://dodgersdata.bot), a statistical dashboard about the LA Dodgers' performance.
+This repository — a growing work in progress — feeds [Giants Data Bot](https://sfgiantsdatabot.com), a statistical dashboard about the San Francisco Giants' performance.
+
+All the real work for this site was done by Matt Stiles, who built the [entire workflow](https://github.com/stiles/dodgers/tree/main). His [target](https://dodgersdata.bot/) was the LA Dodgers. All I've done is try to change the team to the Giants. 
+
+Everything below is from Matt Stiles ...
+
+---
 
 The code executes an automated workflow to fetch, process and store the team's current standings along with historical game-by-game records dating back to 1958. It also collects batting and pitching data, among other statistics, for the same period. These records are processed and used to bake out the site using the Jekyll static site generator, in concert with Github Pages, and D3.js for charts. 
 
