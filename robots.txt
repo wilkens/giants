@@ -1,1 +1,1 @@
-Sitemap: https://wilkens.github.io/giants//sitemap.xml
+Sitemap: https://sfgiantsdatabot.com/sitemap.xml
