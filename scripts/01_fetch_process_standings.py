@@ -163,6 +163,11 @@ def load_historic_data(filepath):
 
     if 'game_date' in historic_df.columns and historic_df['game_date'].dtype == 'object':
         historic_df['game_date'] = pd.to_datetime(historic_df['game_date'])
+    
+    historic_df[['wins', 'losses']] = historic_df['record'].str.split('-', expand=True).astype(int)
+    historic_df['win_pct'] = (historic_df['wins'] / historic_df['gm']).round(2)
+    historic_df['game_day'] = pd.to_datetime(historic_df['game_date']).dt.day_name()
+
     return historic_df
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -184,7 +189,6 @@ def main():
 
         df = pd.concat([src_df, historic_df]).sort_values("game_date", ascending=False).drop_duplicates(subset=['gm', 'year']).reset_index(drop=True)
 
-        
         df[['year', 'gm', 'win_pct', 'gb']].to_csv(csv_file_slim, index=False)
         df[['year', 'gm', 'win_pct', 'gb']].to_json(json_file_slim, orient="records")
         df.to_csv(csv_file, index=False)
