@@ -1333,7 +1333,8 @@ document.addEventListener('DOMContentLoaded', function () {
           .style('width', `${barWidth}%`);
         d3.select(this).append('div')
           .attr('class', `attendance-bar-text ${isGiants ? 'attendance-bar-giants' : ''}`)
-          .text(d.attend_game.toLocaleString());
+          .text(d.attend_game.toLocaleString())
+          .style('width', `${barWidth}%`);
       });
   }
 
