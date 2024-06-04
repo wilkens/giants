@@ -1134,7 +1134,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (field === 'soper') {
           // Red color scale for strikeouts, reversed scale
           // return getColorFromScale(value, min, max, '#ffcccc', '#ff0000', true);
-          return getColorFromScale(value, min, max, '', '#c4c4c4', false);
+          return getColorFromScale(value, min, max, '#27251F', '#c4c4c4', false);
       } else {
           // Blue color scale for other metrics
           return getColorFromScale(value, min, max, '#c4c4c4', '#27251F', false);
