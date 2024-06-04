@@ -116,7 +116,9 @@ function renderChart(data) {
     .attr('class', 'line')
     .attr('d', (d) => line(d[1]))
     .style('fill', 'none')
-    .style('stroke', '#27251F')
+    .style('stroke', function(d) {
+      if (d.gb >= 0) {return '#27251F'}
+      else {return '#FD5A1E'})
     .style('stroke-width', 2);
 
   // Add a horizontal line at y = 0
