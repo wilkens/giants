@@ -55,7 +55,7 @@ permalink: /
 
 
 <h3 class="visual-subhead">Cumulative <span class="win">wins</span>: Then and now</h3>
-<p class="chart-chatter">Since moving to San Francisco, the Giants have won the World Series three times, in 2014, 2012, and 2010. They won the NL pennant in 2002, 1989, and 1962. And they won 103 games twice, in 1993 and 1962. Compare this year's win trajectory with the past.</p>
+<p class="chart-chatter">Since moving to San Francisco, the Giants have won the World Series three times, in 2014, 2012, and 2010. They won the NL pennant in 2002, 1989, and 1962. And they won 107 games in 2023 and 103 in 1993. Compare this year's win trajectory with the past.</p>
 <select id="year-select">
   <option>Previous seasons</option>
 </select>

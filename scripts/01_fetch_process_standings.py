@@ -148,7 +148,7 @@ def fetch_current_year_data(url, year):
             
         ]
     ].copy()
-    
+
     return src_df
 
 
