@@ -118,7 +118,8 @@ function renderChart(data) {
     .style('fill', 'none')
     .style('stroke', function(d) {
       if (d.gb >= 0) {return '#27251F'}
-      else {return '#FD5A1E'})
+      else {return '#FD5A1E'}
+    ;})
     .style('stroke-width', 2);
 
   // Add a horizontal line at y = 0
