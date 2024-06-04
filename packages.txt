@@ -9,4 +9,5 @@ boto3
 altair_saver 
 vl-convert-python
 jupyterlab
+tqdm
 # altair-stiles # pip install altair-stiles
