@@ -214,7 +214,7 @@ permalink: /
     </div>
 </div>
 
-  <p class="dated">Notes: Last updated {{ site.data.season_summary_latest | where: "stat", "update_time" | map: "value" | first }}. More <a href="https://github.com/wilkens/giants/blob/main/README.md">about the data</a>. Based on the work on Matt Stiles, who built the <a href="https://github.com/wilkens/giants/tree/main">system for the Dodgers</a>.</p>
+  <p class="dated">Notes: Last updated {{ site.data.season_summary_latest | where: "stat", "update_time" | map: "value" | first }}. More <a href="https://github.com/wilkens/giants/blob/main/README.md">about the data</a>. Based on the work on Matt Stiles, who built the <a href="https://dodgersdata.bot">system for the Dodgers</a>.</p>
   
 </div>
 
