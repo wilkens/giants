@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"June 8, 2024, 3:14 PM PT",
+        "value":"June 9, 2024, 12:14 AM PT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>SAN FRANCISCO<\/span> <span class='updated'>(June 8)<\/span> \u2014 After <span class='highlight'>64<\/span> games this season, the Giants are in <span class='highlight'>3rd<\/span> place in the National League West division. The team has compiled a <span class='highlight'>31-33<\/span> record, winning <span class='highlight'>48%<\/span> of its games so far. The last game was a <span class='highlight'>5-2<\/span> away <span class='highlight'>win<\/span> against the Texas Rangers in front of <span class='highlight'>35,868<\/span> fans. They've won <span class='highlight'>4 of the last 10<\/span>.",
+        "value":"<span class='highlight'>SAN FRANCISCO<\/span> <span class='updated'>(June 9)<\/span> \u2014 After <span class='highlight'>64<\/span> games this season, the Giants are in <span class='highlight'>3rd<\/span> place in the National League West division. The team has compiled a <span class='highlight'>31-33<\/span> record, winning <span class='highlight'>48%<\/span> of its games so far. The last game was a <span class='highlight'>5-2<\/span> away <span class='highlight'>win<\/span> against the Texas Rangers in front of <span class='highlight'>35,868<\/span> fans. They've won <span class='highlight'>4 of the last 10<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
