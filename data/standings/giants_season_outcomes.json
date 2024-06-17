@@ -1,17 +1,17 @@
 [
     {
         "year":2024,
-        "games":71,
-        "wins":34,
+        "games":72,
+        "wins":35,
         "losses":37,
         "ties":0,
-        "win_pct":0.479,
+        "win_pct":0.486,
         "finish":"3rd of 5",
         "games_back":8.5,
         "playoffs":"",
-        "runs":302,
-        "runs_allowed":332,
-        "attendance":1206519.0,
+        "runs":315,
+        "runs_allowed":338,
+        "attendance":1247527.0,
         "batter_age":29.2,
         "pitcher_age":27.2,
         "league_place":"3rd"
