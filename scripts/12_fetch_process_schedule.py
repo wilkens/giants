@@ -65,7 +65,7 @@ mlb_teams = {
     "HOU": "Houston Astros",
     "KCR": "Kansas City Royals",
     "LAA": "Los Angeles Angels",
-    "SFG": "Los Angeles Dodgers",
+    "LAD": "Los Angeles Dodgers",
     "MIA": "Miami Marlins",
     "MIL": "Milwaukee Brewers",
     "MIN": "Minnesota Twins",
@@ -148,5 +148,5 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 # Saving files locally and to S3
 file_path = os.path.join(data_dir, 'giants_schedule')
 formats = ["csv", "json"]
-# save_dataframe(optimized_df, file_path, formats)
+#save_dataframe(optimized_df, file_path, formats)
 save_to_s3(schedule_df, "data/standings/giants_schedule", "giantsdata", formats)
