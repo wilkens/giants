@@ -1,17 +1,17 @@
 [
     {
         "year":2024,
-        "games":78,
-        "wins":36,
+        "games":79,
+        "wins":37,
         "losses":42,
         "ties":0,
-        "win_pct":0.462,
+        "win_pct":0.468,
         "finish":"4th of 5",
         "games_back":11.5,
         "playoffs":"",
-        "runs":341,
-        "runs_allowed":375,
-        "attendance":1247527.0,
+        "runs":346,
+        "runs_allowed":379,
+        "attendance":1278228.0,
         "batter_age":29.2,
         "pitcher_age":27.3,
         "league_place":"4th"
