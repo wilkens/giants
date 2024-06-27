@@ -1,4 +1,5 @@
 gm,game_date,home_away,opp,result,r,ra,record,rank,gb,time,time_minutes,day_night,attendance,year,wins,losses,win_pct,game_day
+81,2024-06-26,home,CHC,W,4,3,39-42,4,-11.5,2:25:00,145,N,30893,2024,39,42,0.48,Wednesday
 80,2024-06-25,home,CHC,W,5,1,38-42,4,-11.5,2:26:00,146,N,30368,2024,38,42,0.48,Tuesday
 79,2024-06-24,home,CHC,W,5,4,37-42,4,-11.5,2:42:00,162,N,30701,2024,37,42,0.47,Monday
 78,2024-06-23,away,STL,L,3,5,36-42,4,-11.5,2:15:00,135,D,37492,2024,36,42,0.46,Sunday
