@@ -83,7 +83,7 @@ mlb_teams = {
     "HOU": "Houston Astros",
     "KCR": "Kansas City Royals",
     "LAA": "Los Angeles Angels",
-    "SFG": "Los Angeles Dodgers",
+    "LAD": "Los Angeles Dodgers",
     "MIA": "Miami Marlins",
     "MIL": "Milwaukee Brewers",
     "MIN": "Minnesota Twins",
