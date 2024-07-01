@@ -506,8 +506,8 @@ document.addEventListener('DOMContentLoaded', function() {
     line = d3
       .line()
       .x((d) => xScale(d.gm))
-      .y((d) => yScale(d.wins));
-      //.curve(d3.curveMonotoneX); // Smooth the line
+      .y((d) => yScale(d.wins))
+      .curve(d3.curveMonotoneX); // Smooth the line
 
     drawLines(svg, data);
 
