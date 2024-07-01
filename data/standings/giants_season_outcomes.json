@@ -1,20 +1,20 @@
 [
     {
         "year":2024,
-        "games":83,
-        "wins":40,
-        "losses":43,
+        "games":85,
+        "wins":41,
+        "losses":44,
         "ties":0,
         "win_pct":0.482,
-        "finish":"3rd of 5",
+        "finish":"4th of 5",
         "games_back":11.0,
         "playoffs":"",
-        "runs":363,
-        "runs_allowed":391,
-        "attendance":1411076.0,
+        "runs":380,
+        "runs_allowed":409,
+        "attendance":1491167.0,
         "batter_age":29.1,
         "pitcher_age":27.3,
-        "league_place":"3rd"
+        "league_place":"4th"
     },
     {
         "year":2023,
