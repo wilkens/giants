@@ -1,4 +1,5 @@
 gm,game_date,home_away,opp,result,r,ra,record,rank,gb,time,time_minutes,day_night,attendance,year,wins,losses,win_pct,game_day
+91,2024-07-07,away,CLE,L,4,5,44-47,4,-11.0,2:36:00,156,D,32012,2024,44,47,0.48,Sunday
 90,2024-07-06,away,CLE,L,4,5,44-46,4,-11.0,2:35:00,155,D,36081,2024,44,46,0.49,Saturday
 89,2024-07-05,away,CLE,W,4,2,44-45,3,-10.0,2:57:00,177,N,36769,2024,44,45,0.49,Friday
 88,2024-07-04,away,ATL,W,4,2,43-45,4,-10.0,2:24:00,144,N,40672,2024,43,45,0.49,Thursday
