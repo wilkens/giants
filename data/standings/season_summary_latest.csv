@@ -9,7 +9,7 @@ Runs,runs,402,standings,7,League rank
 Runs against,runs_against,429,standings,389,This point last season
 Run differential,run_differential,-27,standings,33,This point last season
 Batting average,batting_average,.244,batting,.249,Last decade average
-Home runs,home_runs,90,batting,8,League rank
+Home runs,home_runs,90,batting,9,League rank
 Home runs/game,home_runs_game,0.99,batting,0.99,Last decade average
 On-base percentage,on_base_pct,.315,batting,.317,Last decade average
 Stolen bases,stolen_bases,30,batting,15,League rank
@@ -17,6 +17,6 @@ Stolen bases/game,stolen_bases_game,0.33,batting,0.35,Rate all last season
 Strikeouts,strikeouts,767,pitching,6,League rank
 Walks,walks,282,pitching,9,League rank
 ERA,era,4.44,pitching,12,League rank
-Last updated,update_time,"July 8, 2024, 11:12 PM PT",summary,,
-Team summary,summary,"<span class='highlight'>SAN FRANCISCO</span> <span class='updated'>(July 8)</span> — After <span class='highlight'>91</span> games this season, the Giants are in <span class='highlight'>4th</span> place in the National League West division. The team has compiled a <span class='highlight'>44-47</span> record, winning <span class='highlight'>48%</span> of its games so far. The last game was a <span class='highlight'>4-5</span> away <span class='highlight'>loss</span> against the Cleveland Guardians in front of <span class='highlight'>32,012</span> fans. They've won <span class='highlight'>5 of the last 10</span>.",summary,,
+Last updated,update_time,"July 9, 2024, 2:09 AM PT",summary,,
+Team summary,summary,"<span class='highlight'>SAN FRANCISCO</span> <span class='updated'>(July 9)</span> — After <span class='highlight'>91</span> games this season, the Giants are in <span class='highlight'>4th</span> place in the National League West division. The team has compiled a <span class='highlight'>44-47</span> record, winning <span class='highlight'>48%</span> of its games so far. The last game was a <span class='highlight'>4-5</span> away <span class='highlight'>loss</span> against the Cleveland Guardians in front of <span class='highlight'>32,012</span> fans. They've won <span class='highlight'>5 of the last 10</span>.",summary,,
 Last game result,last_game_result,loss,summary,,
