@@ -1,4 +1,5 @@
 gm,game_date,home_away,opp,result,r,ra,record,rank,gb,time,time_minutes,day_night,attendance,year,wins,losses,win_pct,game_day
+97,2024-07-14,home,MIN,W,3,2,47-50,4,-9.0,2:17:00,137,D,34115,2024,47,50,0.48,Sunday
 96,2024-07-13,home,MIN,L,2,4,46-50,4,-10.0,2:52:00,172,D,32582,2024,46,50,0.48,Saturday
 95,2024-07-12,home,MIN,W,7,1,46-49,4,-10.0,2:24:00,144,N,34106,2024,46,49,0.48,Friday
 94,2024-07-11,home,TOR,L,3,5,45-49,4,-10.0,2:32:00,152,D,30064,2024,45,49,0.48,Thursday
