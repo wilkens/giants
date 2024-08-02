@@ -9,14 +9,14 @@ Runs,runs,480,standings,7,League rank
 Runs against,runs_against,498,standings,461,This point last season
 Run differential,run_differential,-18,standings,27,This point last season
 Batting average,batting_average,.244,batting,.249,Last decade average
-Home runs,home_runs,109,batting,11,League rank
+Home runs,home_runs,109,batting,12,League rank
 Home runs/game,home_runs_game,0.99,batting,0.99,Last decade average
 On-base percentage,on_base_pct,.315,batting,.317,Last decade average
 Stolen bases,stolen_bases,38,batting,15,League rank
 Stolen bases/game,stolen_bases_game,0.35,batting,0.35,Rate all last season
-Strikeouts,strikeouts,943,pitching,5,League rank
+Strikeouts,strikeouts,943,pitching,6,League rank
 Walks,walks,339,pitching,10,League rank
 ERA,era,4.31,pitching,11,League rank
-Last updated,update_time,"August 1, 2024, 11:13 PM PT",summary,,
-Team summary,summary,"<span class='highlight'>SAN FRANCISCO</span> <span class='updated'>(August 1)</span> — After <span class='highlight'>110</span> games this season, the Giants are in <span class='highlight'>4th</span> place in the National League West division. The team has compiled a <span class='highlight'>54-56</span> record, winning <span class='highlight'>49%</span> of its games so far. The last game was a <span class='highlight'>1-0</span> home <span class='highlight'>win</span> against the Oakland Athletics in front of <span class='highlight'>38,668</span> fans. They've won <span class='highlight'>6 of the last 10</span>.",summary,,
+Last updated,update_time,"August 2, 2024, 2:09 AM PT",summary,,
+Team summary,summary,"<span class='highlight'>SAN FRANCISCO</span> <span class='updated'>(August 2)</span> — After <span class='highlight'>110</span> games this season, the Giants are in <span class='highlight'>4th</span> place in the National League West division. The team has compiled a <span class='highlight'>54-56</span> record, winning <span class='highlight'>49%</span> of its games so far. The last game was a <span class='highlight'>1-0</span> home <span class='highlight'>win</span> against the Oakland Athletics in front of <span class='highlight'>38,668</span> fans. They've won <span class='highlight'>6 of the last 10</span>.",summary,,
 Last game result,last_game_result,win,summary,,

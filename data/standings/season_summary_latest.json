@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":109,
         "category":"batting",
-        "context_value":"11",
+        "context_value":"12",
         "context_value_label":"League rank"
     },
     {
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"943",
         "category":"pitching",
-        "context_value":"5",
+        "context_value":"6",
         "context_value_label":"League rank"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"August 1, 2024, 11:13 PM PT",
+        "value":"August 2, 2024, 2:09 AM PT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>SAN FRANCISCO<\/span> <span class='updated'>(August 1)<\/span> \u2014 After <span class='highlight'>110<\/span> games this season, the Giants are in <span class='highlight'>4th<\/span> place in the National League West division. The team has compiled a <span class='highlight'>54-56<\/span> record, winning <span class='highlight'>49%<\/span> of its games so far. The last game was a <span class='highlight'>1-0<\/span> home <span class='highlight'>win<\/span> against the Oakland Athletics in front of <span class='highlight'>38,668<\/span> fans. They've won <span class='highlight'>6 of the last 10<\/span>.",
+        "value":"<span class='highlight'>SAN FRANCISCO<\/span> <span class='updated'>(August 2)<\/span> \u2014 After <span class='highlight'>110<\/span> games this season, the Giants are in <span class='highlight'>4th<\/span> place in the National League West division. The team has compiled a <span class='highlight'>54-56<\/span> record, winning <span class='highlight'>49%<\/span> of its games so far. The last game was a <span class='highlight'>1-0<\/span> home <span class='highlight'>win<\/span> against the Oakland Athletics in front of <span class='highlight'>38,668<\/span> fans. They've won <span class='highlight'>6 of the last 10<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
