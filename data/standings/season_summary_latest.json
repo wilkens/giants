@@ -2,7 +2,7 @@
     {
         "stat_label":"Wins",
         "stat":"wins",
-        "value":56,
+        "value":57,
         "category":"standings",
         "context_value":62,
         "context_value_label":"This point last season"
@@ -12,15 +12,15 @@
         "stat":"losses",
         "value":57,
         "category":"standings",
-        "context_value":51,
+        "context_value":52,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Record",
         "stat":"record",
-        "value":"56-57",
+        "value":"57-57",
         "category":"standings",
-        "context_value":"62-51",
+        "context_value":"62-52",
         "context_value_label":"This point last season"
     },
     {
@@ -28,7 +28,7 @@
         "stat":"win_pct",
         "value":"50%",
         "category":"standings",
-        "context_value":"55%",
+        "context_value":"54%",
         "context_value_label":"This point last season"
     },
     {
@@ -50,7 +50,7 @@
     {
         "stat_label":"Runs",
         "stat":"runs",
-        "value":495,
+        "value":499,
         "category":"standings",
         "context_value":"7",
         "context_value_label":"League rank"
@@ -58,17 +58,17 @@
     {
         "stat_label":"Runs against",
         "stat":"runs_against",
-        "value":506,
+        "value":507,
         "category":"standings",
-        "context_value":474,
+        "context_value":481,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Run differential",
         "stat":"run_differential",
-        "value":-11,
+        "value":-8,
         "category":"standings",
-        "context_value":29,
+        "context_value":27,
         "context_value_label":"This point last season"
     },
     {
@@ -82,7 +82,7 @@
     {
         "stat_label":"Home runs",
         "stat":"home_runs",
-        "value":117,
+        "value":119,
         "category":"batting",
         "context_value":"9",
         "context_value_label":"League rank"
@@ -114,7 +114,7 @@
     {
         "stat_label":"Stolen bases\/game",
         "stat":"stolen_bases_game",
-        "value":0.34,
+        "value":0.33,
         "category":"batting",
         "context_value":0.35,
         "context_value_label":"Rate all last season"
@@ -122,7 +122,7 @@
     {
         "stat_label":"Strikeouts",
         "stat":"strikeouts",
-        "value":"973",
+        "value":"984",
         "category":"pitching",
         "context_value":"5",
         "context_value_label":"League rank"
@@ -130,7 +130,7 @@
     {
         "stat_label":"Walks",
         "stat":"walks",
-        "value":"346",
+        "value":"349",
         "category":"pitching",
         "context_value":"11",
         "context_value_label":"League rank"
@@ -138,7 +138,7 @@
     {
         "stat_label":"ERA",
         "stat":"era",
-        "value":"4.27",
+        "value":"4.24",
         "category":"pitching",
         "context_value":"11",
         "context_value_label":"League rank"
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"August 5, 2024, 11:13 PM PT",
+        "value":"August 6, 2024, 2:09 AM PT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>SAN FRANCISCO<\/span> <span class='updated'>(August 5)<\/span> \u2014 After <span class='highlight'>113<\/span> games this season, the Giants are in <span class='highlight'>4th<\/span> place in the National League West division. The team has compiled a <span class='highlight'>56-57<\/span> record, winning <span class='highlight'>50%<\/span> of its games so far. The last game was a <span class='highlight'>8-2<\/span> away <span class='highlight'>win<\/span> against the Cincinnati Reds in front of <span class='highlight'>27,692<\/span> fans. They've won <span class='highlight'>7 of the last 10<\/span>.",
+        "value":"<span class='highlight'>SAN FRANCISCO<\/span> <span class='updated'>(August 6)<\/span> \u2014 After <span class='highlight'>114<\/span> games this season, the Giants are in <span class='highlight'>4th<\/span> place in the National League West division. The team has compiled a <span class='highlight'>57-57<\/span> record, winning <span class='highlight'>50%<\/span> of its games so far. The last game was a <span class='highlight'>4-1<\/span> away <span class='highlight'>win<\/span> against the Washington Nationals in front of <span class='highlight'>14,674<\/span> fans. They've won <span class='highlight'>8 of the last 10<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
