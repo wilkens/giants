@@ -5,7 +5,7 @@ Record,record,66-66,standings,69-63,This point last season
 Win percentage,win_pct,50%,standings,52%,This point last season
 Games up/back,games_up_back,-12.5,standings,4,Division rank
 Avg. home attendance,mean_attendance,"33,112",standings,66,Home games this season
-Runs,runs,568,standings,8,League rank
+Runs,runs,568,standings,9,League rank
 Runs against,runs_against,580,standings,566,This point last season
 Run differential,run_differential,-12,standings,6,This point last season
 Batting average,batting_average,.242,batting,.249,Last decade average
@@ -17,6 +17,6 @@ Stolen bases/game,stolen_bases_game,0.41,batting,0.35,Rate all last season
 Strikeouts,strikeouts,1164,pitching,3,League rank
 Walks,walks,417,pitching,12,League rank
 ERA,era,4.17,pitching,11,League rank
-Last updated,update_time,"August 26, 2024, 11:13 PM PT",summary,,
-Team summary,summary,"<span class='highlight'>SAN FRANCISCO</span> <span class='updated'>(August 26)</span> — After <span class='highlight'>132</span> games this season, the Giants are in <span class='highlight'>4th</span> place in the National League West division. The team has compiled a <span class='highlight'>66-66</span> record, winning <span class='highlight'>50%</span> of its games so far. The last game was a <span class='highlight'>3-4</span> away <span class='highlight'>loss</span> against the Seattle Mariners in front of <span class='highlight'>35,062</span> fans. They've won <span class='highlight'>5 of the last 10</span>.",summary,,
+Last updated,update_time,"August 27, 2024, 2:09 AM PT",summary,,
+Team summary,summary,"<span class='highlight'>SAN FRANCISCO</span> <span class='updated'>(August 27)</span> — After <span class='highlight'>132</span> games this season, the Giants are in <span class='highlight'>4th</span> place in the National League West division. The team has compiled a <span class='highlight'>66-66</span> record, winning <span class='highlight'>50%</span> of its games so far. The last game was a <span class='highlight'>3-4</span> away <span class='highlight'>loss</span> against the Seattle Mariners in front of <span class='highlight'>35,062</span> fans. They've won <span class='highlight'>5 of the last 10</span>.",summary,,
 Last game result,last_game_result,loss,summary,,
