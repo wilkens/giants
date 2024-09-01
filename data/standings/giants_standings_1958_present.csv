@@ -1,4 +1,5 @@
 gm,game_date,home_away,opp,result,r,ra,record,rank,gb,time,time_minutes,day_night,attendance,year,wins,losses,win_pct,game_day
+137,2024-08-31,home,MIA,L,3,4,68-69,4,-14.5,2:22:00,142,N,36087,2024,68,69,0.5,Saturday
 136,2024-08-30,home,MIA,W,3,1,68-68,4,-13.5,2:21:00,141,N,33606,2024,68,68,0.5,Friday
 135,2024-08-29,away,MIL,L,0,6,67-68,4,-13.5,2:14:00,134,D,30920,2024,67,68,0.5,Thursday
 134,2024-08-28,away,MIL,L,3,5,67-67,4,-12.5,2:43:00,163,N,23247,2024,67,67,0.5,Wednesday
