@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":143,
         "category":"batting",
-        "context_value":"11",
+        "context_value":"12",
         "context_value_label":"League rank"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"September 2, 2024, 8:10 PM PT",
+        "value":"September 2, 2024, 11:13 PM PT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
