@@ -4,13 +4,13 @@
         "stat":"wins",
         "value":69,
         "category":"standings",
-        "context_value":71,
+        "context_value":72,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Losses",
         "stat":"losses",
-        "value":72,
+        "value":73,
         "category":"standings",
         "context_value":70,
         "context_value_label":"This point last season"
@@ -18,9 +18,9 @@
     {
         "stat_label":"Record",
         "stat":"record",
-        "value":"69-72",
+        "value":"69-73",
         "category":"standings",
-        "context_value":"71-70",
+        "context_value":"72-70",
         "context_value_label":"This point last season"
     },
     {
@@ -28,7 +28,7 @@
         "stat":"win_pct",
         "value":"49%",
         "category":"standings",
-        "context_value":"50%",
+        "context_value":"51%",
         "context_value_label":"This point last season"
     },
     {
@@ -50,7 +50,7 @@
     {
         "stat_label":"Runs",
         "stat":"runs",
-        "value":601,
+        "value":602,
         "category":"standings",
         "context_value":"9",
         "context_value_label":"League rank"
@@ -58,23 +58,23 @@
     {
         "stat_label":"Runs against",
         "stat":"runs_against",
-        "value":623,
+        "value":628,
         "category":"standings",
-        "context_value":621,
+        "context_value":622,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Run differential",
         "stat":"run_differential",
-        "value":-22,
+        "value":-26,
         "category":"standings",
-        "context_value":-18,
+        "context_value":-10,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Batting average",
         "stat":"batting_average",
-        "value":".240",
+        "value":".239",
         "category":"batting",
         "context_value":".249",
         "context_value_label":"Last decade average"
@@ -82,7 +82,7 @@
     {
         "stat_label":"Home runs",
         "stat":"home_runs",
-        "value":146,
+        "value":147,
         "category":"batting",
         "context_value":"11",
         "context_value_label":"League rank"
@@ -98,7 +98,7 @@
     {
         "stat_label":"On-base percentage",
         "stat":"on_base_pct",
-        "value":".309",
+        "value":".308",
         "category":"batting",
         "context_value":".317",
         "context_value_label":"Last decade average"
@@ -106,7 +106,7 @@
     {
         "stat_label":"Stolen bases",
         "stat":"stolen_bases",
-        "value":59,
+        "value":60,
         "category":"batting",
         "context_value":"14",
         "context_value_label":"League rank"
@@ -122,7 +122,7 @@
     {
         "stat_label":"Strikeouts",
         "stat":"strikeouts",
-        "value":"1256",
+        "value":"1265",
         "category":"pitching",
         "context_value":"3",
         "context_value_label":"League rank"
@@ -130,7 +130,7 @@
     {
         "stat_label":"Walks",
         "stat":"walks",
-        "value":"456",
+        "value":"457",
         "category":"pitching",
         "context_value":"12",
         "context_value_label":"League rank"
@@ -138,7 +138,7 @@
     {
         "stat_label":"ERA",
         "stat":"era",
-        "value":"4.20",
+        "value":"4.21",
         "category":"pitching",
         "context_value":"11",
         "context_value_label":"League rank"
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"September 6, 2024, 11:11 PM PT",
+        "value":"September 7, 2024, 2:09 AM PT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>SAN FRANCISCO<\/span> <span class='updated'>(September 6)<\/span> \u2014 After <span class='highlight'>141<\/span> games this season, the Giants are in <span class='highlight'>4th<\/span> place in the National League West division. The team has compiled a <span class='highlight'>69-72<\/span> record, winning <span class='highlight'>49%<\/span> of its games so far. The last game was a <span class='highlight'>3-2<\/span> home <span class='highlight'>win<\/span> against the Arizona Diamondbacks in front of <span class='highlight'>27,871<\/span> fans. They've won <span class='highlight'>3 of the last 10<\/span>.",
+        "value":"<span class='highlight'>SAN FRANCISCO<\/span> <span class='updated'>(September 7)<\/span> \u2014 After <span class='highlight'>142<\/span> games this season, the Giants are in <span class='highlight'>4th<\/span> place in the National League West division. The team has compiled a <span class='highlight'>69-73<\/span> record, winning <span class='highlight'>49%<\/span> of its games so far. The last game was a <span class='highlight'>1-5<\/span> away <span class='highlight'>loss<\/span> against the San Diego Padres in front of <span class='highlight'>42,595<\/span> fans. They've won <span class='highlight'>3 of the last 10<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -162,7 +162,7 @@
     {
         "stat_label":"Last game result",
         "stat":"last_game_result",
-        "value":"win",
+        "value":"loss",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
