@@ -1,22 +1,22 @@
 stat_label,stat,value,category,context_value,context_value_label
 Wins,wins,74,standings,76,This point last season
-Losses,losses,78,standings,76,This point last season
-Record,record,74-78,standings,76-76,This point last season
-Win percentage,win_pct,49%,standings,50%,This point last season
-Games up/back,games_up_back,-16.0,standings,4,Division rank
+Losses,losses,79,standings,77,This point last season
+Record,record,74-79,standings,76-77,This point last season
+Win percentage,win_pct,48%,standings,50%,This point last season
+Games up/back,games_up_back,-17.0,standings,4,Division rank
 Avg. home attendance,mean_attendance,"32,615",standings,78,Home games this season
-Runs,runs,648,standings,10,League rank
-Runs against,runs_against,665,standings,679,This point last season
-Run differential,run_differential,-17,standings,-24,This point last season
+Runs,runs,651,standings,10,League rank
+Runs against,runs_against,670,standings,686,This point last season
+Run differential,run_differential,-19,standings,-29,This point last season
 Batting average,batting_average,.238,batting,.249,Last decade average
-Home runs,home_runs,162,batting,10,League rank
+Home runs,home_runs,163,batting,10,League rank
 Home runs/game,home_runs_game,1.07,batting,0.99,Last decade average
 On-base percentage,on_base_pct,.306,batting,.317,Last decade average
 Stolen bases,stolen_bases,66,batting,14,League rank
 Stolen bases/game,stolen_bases_game,0.43,batting,0.35,Rate all last season
-Strikeouts,strikeouts,1344,pitching,4,League rank
-Walks,walks,486,pitching,12,League rank
-ERA,era,4.14,pitching,10,League rank
-Last updated,update_time,"September 19, 2024, 8:12 PM PT",summary,,
-Team summary,summary,"<span class='highlight'>SAN FRANCISCO</span> <span class='updated'>(September 19)</span> — After <span class='highlight'>152</span> games this season, the Giants are in <span class='highlight'>4th</span> place in the National League West division. The team has compiled a <span class='highlight'>74-78</span> record, winning <span class='highlight'>49%</span> of its games so far. The last game was a <span class='highlight'>5-3</span> away <span class='highlight'>win</span> against the Baltimore Orioles in front of <span class='highlight'>23,856</span> fans. They've won <span class='highlight'>5 of the last 10</span>.",summary,,
-Last game result,last_game_result,win,summary,,
+Strikeouts,strikeouts,1357,pitching,4,League rank
+Walks,walks,489,pitching,12,League rank
+ERA,era,4.15,pitching,10,League rank
+Last updated,update_time,"September 19, 2024, 11:13 PM PT",summary,,
+Team summary,summary,"<span class='highlight'>SAN FRANCISCO</span> <span class='updated'>(September 19)</span> — After <span class='highlight'>153</span> games this season, the Giants are in <span class='highlight'>4th</span> place in the National League West division. The team has compiled a <span class='highlight'>74-79</span> record, winning <span class='highlight'>48%</span> of its games so far. The last game was a <span class='highlight'>3-5</span> away <span class='highlight'>loss</span> against the Baltimore Orioles in front of <span class='highlight'>23,181</span> fans. They've won <span class='highlight'>4 of the last 10</span>.",summary,,
+Last game result,last_game_result,loss,summary,,
