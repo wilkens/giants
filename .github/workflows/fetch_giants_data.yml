@@ -2,7 +2,7 @@ name: run_giants
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # Adjusted for UTC (Daylight Saving Time)
+    #- cron: '0 */3 * * *'  # Adjusted for UTC (Daylight Saving Time)
   workflow_dispatch:
 
 jobs:
